@@ -1,1 +1,181 @@
-Hello World
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+	<meta charset='UTF-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+	<title>Suchit Gupte</title>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<link rel='stylesheet' href='asset/css/bootstrap.css'>
+	<link rel='stylesheet' href='asset/css/all.css'>
+	<link rel='stylesheet' href='asset/css/style.css'>
+	<style>
+		ul.scroll {
+			margin: 4px, 4px;
+			padding: 4px;
+			height: 150px;
+			overflow-x: hidden;
+			overflow-y: auto;
+			text-align: justify;
+		}
+	</style>
+</head>
+
+<body class='bg-light'>
+	<header>
+		<nav class='navbar navbar-light fixed-top bg-light'>
+			<a class='navbar-brand col-sm-3 col-md-2 mt-1 ml-5' href='index.html'>
+				<h2>SUCHIT GUPTE</h2>
+			</a>
+			<ul class="nav justify-content-center">
+				<li class="nav-item">
+					<a class=" nav-link" target="_blank" href="asset/pdf/CV.pdf">CV</a>
+				</li>
+				<li class="nav-item">
+					<a class=" nav-link" href="#research">Publications</a>
+				</li>
+				<li class="nav-item">
+					<a class=" nav-link" href="#project">Projects</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<section id="top">
+		<div class='container pt-5'>
+			<div class="row pt-5">
+				<div class="col-3">
+					<img class="img-fluid rounded" src="asset/image/mona.jpg" alt="headshot">
+				</div>
+				<div class="col-9">
+					<h4 class=''>Ph.D. in Computer Science @ The Ohio State University</h4>
+					<div class="row">
+						<p class="text-muted mx-3 my-2">gandhi.255 [at] osu.edu</p>
+						<span class="icon"><a class="text-dark" target="_blank" href="https://www.linkedin.com/in/monagandhi09/"><i
+							class="fab fa-linkedin mx-2"></i></a></span>
+						<span class="icon"><a class="text-dark" target="_blank"
+								href="https://scholar.google.com/citations?user=1wHg0-sAAAAJ&hl=en"><i
+									class="fas fa-graduation-cap mx-2"></i></a></span>
+						<span class="icon"><a class="text-dark" target="_blank" href="https://github.com/monaGandhi09/"><i
+									class="fab fa-github mx-2"></i></a></span>
+						<span class="icon"><a class="text-dark" target="_blank"
+							href="https://twitter.com/monagandhi09"><i class="fab fa-1x fa-twitter mx-2"></i></a></span>
+					</div>
+					<p>Hi! I am a PhD student in Computer Science and Engineering at The Ohio State University, 
+            specializing in interpretability and fairness in machine learning. I hold a Bachelor's degree in 
+            Computer Science from Rutgers, The State University of New Jersey.
+
+            Previously, I had the opportunity to work with <a href="https://eshed1.github.io/">Prof. Eshed Ohn-Bar</a> 
+            on advancing vehicle keypoint detection under extreme occlusion and truncation. 
+					</p>
+				</div>
+			</div>
+			<div class="row pt-5">
+				<p>My research focuses on fair and interpretable AI, aiming to understand the 
+          internal representations and decision-making processes of complex models.
+          My current work centers on high-order attention mechanisms for transformers, aiming to 
+          enhance their interpretability and reasoning capabilities in multimodal and structured data settings.
+				</p>
+			</div>
+		</div>
+	</section>
+	<section class="mx-5 my-5" id="highlights">
+		<h3 class="mx-5">Updates and Achievements</h3>
+		<!-- <div class="scroll"> -->
+		<ul class=" mx-5 scroll">
+			<li class="bg-light">
+				<b>[Feb, 2025] </b> Our paper <i>Understanding the Black Box: A Deep Empirical Dive into Shapley Value Approximations for Tabular Data</i> has been accepted to Sigmod 2025. 
+			</li>
+			<li class="bg-light">
+				<b>[May, 2023] </b> Graduated with a Bachelors Degree in Computer Science from Rutgers
+			</li>
+      <li class="bg-light">
+				<b>[May, 2023] </b> Dean's List, Spring 2023, Rutgers
+			</li>
+			<li class="bg-light">
+				<b>[April, 2023] </b> Decided to go to <b>Ohio State University</b> for my PhD!
+			</li>
+      <li class="bg-light">
+				<b>[Feb, 2023] </b> Dean's List, Fall 2022, Rutgers
+			</li>
+			<li class="bg-light">
+				<b>[Oct, 2022] </b> Dean's List, Spring 2022, Rutgers
+			</li>
+      <li class="bg-light">
+				<b>[Feb, 2022] </b> Dean's List, Fall 2021, Rutgers
+			</li>
+		</ul>
+		<!-- </div> -->
+	</section>
+	<section class="mx-5 my-5" id="research">
+<!-- 		<h3 class="mx-5">Recent Preprints</h3>
+		<ul class="list-group list-group-flush mx-5">
+			<li class="list-group-item bg-light">
+				<div class="row">
+					<div class="col-3"><img class="img-fluid" src="asset/image/knobo-teaser.png" alt="knobo image">
+					</div>
+					<div class="col-9">
+						<h4 id='top' class=''>A Textbook Remedy for Domain Shifts: Knowledge Priors for Medical Image Analysis</h4>
+						<p>Yue Yang, <b><u>Mona Gandhi</u></b>, Yufei Wang, Yifan Wu, Michael S. Yao, Chris Callison-Burch, James C. Gee, Mark Yatskar</p>
+						<p>arxiv</p>
+						<p>
+							<a href="">[PDF]</a>
+							<a href="https://github.com/TheDatumOrg/ShapleyValuesEval">[Code]</a>
+						</p>
+						<p>TL;DR: We introduce Knowledge Bottlenecks (KnoBo) that incorporate priors from medical documents, such as PubMed, through inherently interpretable models. KnoBo is robust to domain shifts in medical images, e.g., data sampled from different hospitals or data confounded by demographic variables such as sex, race, etc. Overall, our work demonstrates that a key missing ingredient for robustness to distribution shift in medical imaging models is a prior rooted in knowledge.</p>
+					</div>
+			</li>
+		</ul> -->
+		<h3 class="mx-5">Publications</h3>
+		<ul class="list-group list-group-flush mx-5">
+			<li class="list-group-item bg-light">
+				<div class="row">
+					<div class="col-3"><img class="img-fluid" src="asset/image/crepe.png" alt="crepe image">
+					</div>
+					<div class="col-9">
+						<h4 id='top' class=''>CREPE: Can Vision-Language Foundation Models Reason Compositionally?</h4>
+						<p><b><u>Suchit Gupte</u></b> John Paparrizos</p>
+						<p>Sigmod 2025</p>
+						<p>
+							<a href="">[PDF(not yet available)]</a>
+							<a href="https://github.com/TheDatumOrg/ShapleyValuesEval">[Code]</a>
+						</p>
+					</div>
+			</li>
+
+		</ul>
+		</div>
+	</section>
+	<section class="mx-5 my-5" id="project">
+		<h3 class="mx-5">Projects</h3>
+		<div class="row mx-5" id="project">
+			<div class="col-4" style="padding-bottom: 30px;">
+				<div class="card mt-3 h-100">
+					<div class="card-body pb-0">
+						<h5 class="card-title">Examining the Reversal Curse on Logical Equivalence</h5>
+						<h6 class="card-subtitle mb-2 text-muted">[Fall 2024]</h6>
+						<p class="card-text"><i>Technologies: </i>LLMs, Deep Learning</p>
+						<p class="card-text">
+							The <a href="https://arxiv.org/abs/2309.12288">Reversal Curse paper</a> highlights a simple task that these models fail at. 
+              If the model has seen A is B, it is not guaranteed that the model can generalize B is A - this is 
+              coined as Reversal Curse in the paper. Expanding on this, my work investigates whether this 
+              limitation extends to logical equivalences—specifically, whether models trained on "A implies B" can 
+              infer "not B implies not A." This research evaluates the model’s ability to reason beyond memorization.
+						</p>
+						<a href="asset/pdf/cs5539_reversalcurse.pdf" target="_blank"
+							class="card-link">[Report]</a>
+						<a href="asset/pdf/cse5539_presentation.pdf" target="_blank"
+							class="card-link">[Presentation]</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<hr class='featurette-divider'>
+	<footer>
+		<p class='mx-5 d-flex justify-content-end'><a class="" href='#top'>Back to top</a></p>
+	</footer>
+</body>
+
+</html>
